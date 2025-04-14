@@ -1,0 +1,13 @@
+# Ignore venv & cached files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore data & outputs
+data/
+outputs/
+
+# Ignore Jupyter junk
+.ipynb_checkpoints/
