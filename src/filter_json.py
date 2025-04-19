@@ -1,9 +1,5 @@
 import json , shutil, os
-""" 
-    Filters only the files with 
-    Each instrument are labeled with exactly one family index ID. Instrument families Index ID : 
-        guitar  = 3 , keyboard = 4, mallet/percussive = 5, string/violin = 8
-"""
+
 """
 Filter NSynth dataset to keep only selected instrument families.
 
@@ -19,7 +15,7 @@ It loads `nsynth-{split}.json` files from /data/json/,
 filters only the relevant samples, 
 and writes `nsynth-{split}-filtered.json` in the same directory.
 
-
+Then 
 
 """
 
@@ -41,6 +37,10 @@ def filter_data(json_data, allowed_families):
         if fam in allowed_families:
             filtered[key] = entry
     return filtered
+
+
+
+
 
 allowed_families = ["guitar", "keyboard", "mallet", "string"]
 

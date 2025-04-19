@@ -1,5 +1,3 @@
-import json, os, shutil
-
 """
 The script copies only the filtered .wav files into subfolders for
 training, vaildation and testing datasets based on filtered files in filter_json.py
@@ -12,6 +10,7 @@ Missing .wav files will be logged, but won't break the script.
 
 
 """
+import json, os, shutil
 
 def copy_wav_files(json_path, source_dir, target_dir):
     """
